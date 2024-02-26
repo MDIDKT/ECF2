@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    background-image: linear-gradient(#38524c5c, #38524c5c), url(Images/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+.navbar .logo img{
+    margin: 40px 0px;
+
+}
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-menu ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    
+}
+.connexion{
+    background-color: #6587a188;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.nav-menu ul li a:hover{
+    background-color: #6587A1;
+    transition: 0.5s ease;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+
+
+.toogle-btn{
+    position: absolute;
+    top: 28px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 22px;
+  
+}
+.toggle-btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color: #c03636;
+    border-radius: 10px;
+}
+
+
+.content-section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0px 60px;
+}
+.content-section h1{
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.content-section p{
+    color: #a49b9b;
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.content-section .button{
+    margin-top: 25px;
+}
+.content-section .button a{
+    padding: 14px 5px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    background-color: #6587A1;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.content-section .button a:hover{
+    background-color: #9dd153;
+    transition: 0.5s ease;
+}
+@media screen and(max-width: 768px){
+    .toggle-btn{
+        display: flex;
+        z-index: 2;
+    }
+    .nav-menu ul{  
+        width: 100%;
+        background-color: #508089;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .nav-menu{
+        display: none;
+        width: 100%;
+    }    
+    .nav-menu ul li{
+       margin: 20px 0;
+    }
+    .nav-menu ul li a{
+        font-size: 20px;
+    }
+    .navbar .logo{
+        font-size: 29px;
+    }
+    .content-section h1{
+        font-size: 40px;
+    }
+    .content-section p{
+        font-size: 16px;
+    }
+    .content-section .button a{
+        padding: 9px 15px;
+        font-size: 17px;
+    }
+    .nav-menu .active{
+        display: flex;
+    }
+}

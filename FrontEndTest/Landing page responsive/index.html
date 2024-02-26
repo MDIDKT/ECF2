@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../Landing page responsive/Images/7725857.jpg" width="100" ="logo">
+            </div>
+                <a href="#" class="toogle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="../Landing page responsive/index.html">Accueil</a></li>
+                        <li><a href="#">A propos de nous</a></li>
+                        <li><a href="../1.1.Card/index.html">Nos specialités</a></li>
+                        <li class="connexion"><a href="#">CONNEXION</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="content-section">
+            <h1>Hopital "SOIGNE MOI"</h1>
+            <p>Vos prise de rendez vous en ligne</p>
+            <div class="button">
+                <a href="../1.1.Card/index.html">Voir nos specialités</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/Javascript">
+        const toogleBtn = document.getElementsByClassName('.toogle-btn')[0];
+        const navMenu = document.getElementsByClassName('nav-menu')[0];
+        toogleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
