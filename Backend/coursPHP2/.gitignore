@@ -1,0 +1,41 @@
+Source compilée
+###################
+(.com)
+Classe.class
+*.dll
+exe.exe
+.o.
+-*.so.
+
+- #Paquets
+############
+Il est préférable de déballer ces fichiers et d'engager la source brute
+#git a sa propre construction en méthodes de compression
+0,7 z
+-.dmg
+(.gz)
+I.iso
+*.jar
+-.rar
+*.tar
+*.zip
+
+:: Logs et bases de données
+######################
+*.log
+-.sql
+-.sqlite
+
+Fichiers générés par OS
+######################
+.DS - Étuve
+.DS-Store ?
+. . . . . .
+.Spotlight-V100
+.Suivis
+ehthumbs.db
+Pouceaux. db
+
+#Fichiers de test
+.coursPHP2/index.php
+.coursPHP2/index.php
