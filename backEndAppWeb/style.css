@@ -1,0 +1,65 @@
+* {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4a90e2, #0368de);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px; /* Ajuster la largeur maximale du formulaire */
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    color: #0368de;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0368de;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+}
